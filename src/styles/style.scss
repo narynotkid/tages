@@ -1,0 +1,35 @@
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display?styles=98773');
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: "San Francisco";
+  font-style: normal;
+  font-display: auto;
+  unicode-range: U+000-5FF;
+  src: local("San Francisco"), url("src/assets/fonts/sanfranciscodisplay-regular-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-feature-settings: 'ss04' on;
+  font-display: auto;
+  unicode-range: U+000-5FF;
+}
+
+@font-face {
+  font-family: 'SF Pro Display Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-feature-settings: 'ss04' on;
+  font-display: auto;
+  unicode-range: U+000-5FF;
+  src: url("src/assets/fonts/SF-Pro-Display-Medium.otf") format("otf");
+}

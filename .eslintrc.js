@@ -64,7 +64,7 @@ module.exports = {
             },
         ],
         'no-fallthrough': 'off',
-        'linebreak-style': ['error', 'unix'],
+        'linebreak-style': 0,
         semi: ['error', 'always'],
         'space-before-function-paren': [
             'error',
