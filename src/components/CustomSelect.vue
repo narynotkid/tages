@@ -1,15 +1,15 @@
 <template>
   <div
-      class="some"
+      class="custom-select"
       tabindex="1"
       @focus="isDropdownListActive = true"
       @focusout="isDropdownListActive = false"
       ref="selector"
   >
-    <div class="select-title">
+    <span class="custom-select__title">
       {{ title }}:
-    </div>
-    <div :class="isDropdownListActive ? 'select-container open' : 'select-container'">
+    </span>
+    <div :class="isDropdownListActive ? 'custom-select__container open' : 'custom-select__container'">
       {{ selectedItem.name }}
     </div>
     <div
@@ -57,13 +57,13 @@ const isDropdownListActive = ref(false);
 </script>
 
 <style scoped lang="scss">
-.some {
+.custom-select {
   display: flex;
   flex-direction: column;
   margin-right: 25px;
   margin-bottom: 40px;
 
-  .select-title {
+  .custom-select__title {
     font-family: 'SF Pro Display', sans-serif;
     font-size: 12px;
     line-height: 18px;
@@ -79,7 +79,7 @@ const isDropdownListActive = ref(false);
     }
   }
 
-  .select-container {
+  .custom-select__container {
     width: 288px;
     height: 40px;
     position: relative;

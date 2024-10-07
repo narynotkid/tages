@@ -3,7 +3,7 @@
     <BreadcrumbsComponent/>
 
     <header class="container__head-title">
-      <span class="head-title-text">
+      <span class="head-title__text">
         Комплекты стеллажных систем
       </span>
     </header>
@@ -74,7 +74,7 @@ const filterItems = (item: FilterItemType) => {
     margin-top: 32px;
     margin-bottom: 28px;
 
-    .head-title-text {
+    .head-title__text {
       font-family: 'SF Pro Display', sans-serif;
       font-size: 36px;
       line-height: 48px;

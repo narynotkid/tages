@@ -1,24 +1,24 @@
 <template>
   <div class="product-card">
-    <div class="image-container">
+    <div class="product-card__image-container">
       <span
           v-if="productItem.price?.old_price"
-          class="discount-rect"
+          class="product-card__discount-rect"
       >
         Скидка
       </span>
       <img
-          class="image"
+          class="product-card__image"
           :src="productItem.image.url"
-          alt="some"
+          :alt="productItem.name"
       />
     </div>
 
     <div class="product-card__info">
-      <div class="product-code">
+      <div class="product-card__product-code">
         {{ productItem.code ?? '' }}
       </div>
-      <div class="product-name">
+      <div class="product-card__product-name">
         {{ productItem.name }}
       </div>
 
@@ -36,7 +36,7 @@
           </div>
         </div>
 
-        <div class="actions-container">
+        <div class="product-card__actions-container">
           <div
               class="add-to-cart icon"
               @click="addOrDeleteFromStorages('cartItems')"
@@ -124,7 +124,7 @@ const addOrDeleteFromStorages = (key: string): void => {
     height: 300px;
   }
 
-  .discount-rect {
+  .product-card__discount-rect {
     width: 81px;
     height: 24px;
     background: rgba(235, 87, 87, 0.92);
@@ -139,7 +139,7 @@ const addOrDeleteFromStorages = (key: string): void => {
     z-index: 100;
   }
 
-  .image {
+  .product-card__image {
     width: 238px;
     height: 237px;
     left: 49px;
@@ -162,7 +162,7 @@ const addOrDeleteFromStorages = (key: string): void => {
     padding-left: 15px;
     letter-spacing: 0.04em;
 
-    .product-code {
+    .product-card__product-code {
       color: #888888;
       font-family: 'San Francisco', sans-serif;
       font-size: 10px;
@@ -174,7 +174,7 @@ const addOrDeleteFromStorages = (key: string): void => {
       }
     }
 
-    .product-name {
+    .product-card__product-name {
       padding-top: 10px;
       font-family: 'San Francisco', sans-serif;
       font-size: 15px;
@@ -203,7 +203,7 @@ const addOrDeleteFromStorages = (key: string): void => {
         }
       }
 
-      .actions-container {
+      .product-card__actions-container {
         display: flex;
         flex-direction: row;
 
