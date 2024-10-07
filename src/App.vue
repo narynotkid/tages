@@ -2,11 +2,11 @@
   <div class="container">
     <BreadcrumbsComponent/>
 
-    <div class="container__head-title">
+    <header class="container__head-title">
       <span class="head-title-text">
         Комплекты стеллажных систем
       </span>
-    </div>
+    </header>
 
     <div class="filters-container">
       <CustomSelect
@@ -21,13 +21,13 @@
       />
     </div>
 
-    <div class="products-container">
+    <main class="products-container">
       <ProductCard
           v-for="productItem in store.state.items"
           :productItem="productItem"
           :key="productItem.id"
       />
-    </div>
+    </main>
   </div>
 </template>
 

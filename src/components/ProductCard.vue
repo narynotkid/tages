@@ -210,7 +210,6 @@ const addOrDeleteFromStorages = (key: string): void => {
         .icon {
           padding-right: 15px;
         }
-
       }
     }
   }
